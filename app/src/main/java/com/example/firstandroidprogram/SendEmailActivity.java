@@ -29,6 +29,7 @@ public class SendEmailActivity extends AppCompatActivity {
             AlertDialog.Builder builder1 = new AlertDialog.Builder(this);
             builder1.setMessage("error in email body,do you want to change your email?");
             builder1.setCancelable(true);
+            //here is alert
             builder1.setPositiveButton( "Yes",
                     new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int id) {
@@ -46,6 +47,7 @@ public class SendEmailActivity extends AppCompatActivity {
             AlertDialog alertDialog = builder1.create();
             alertDialog.show();
         }else {
+            //this part is entering to email app of mobile phone button
             String[] addresses = new String[1];
             addresses[0] = username;
             Intent intent = new Intent(Intent.ACTION_SENDTO);
