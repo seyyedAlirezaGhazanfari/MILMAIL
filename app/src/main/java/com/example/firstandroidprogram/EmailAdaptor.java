@@ -34,6 +34,7 @@ public  class EmailAdaptor extends RecyclerView.Adapter<EmailAdaptor.ViewHolder>
      Email email = data.get(position);
      holder.subject.setText(email.getSubject());
      holder.sender.setText(email.getSender());
+     //here is usage of picasso for showing image
      Picasso.get().load(email.getImageURL()).resize(150,150).into(holder.imageView);
 
     }
