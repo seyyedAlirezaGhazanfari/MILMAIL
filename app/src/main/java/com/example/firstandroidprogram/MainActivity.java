@@ -64,6 +64,9 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+
+    // create mail button activity is added
+
     public void createEmail(View view) {
         EditText txtUsername = findViewById(R.id.txtUsername);
         EditText txtPassword = findViewById(R.id.txtPassword);
